@@ -62,7 +62,9 @@ class TodoController extends Controller
         return view('/kakunin', $data);
     }
 
-public function create()
+
+
+public function complete2()
 {
     $data = session()->all(); // ２）
     DB::table('todos')->insert([

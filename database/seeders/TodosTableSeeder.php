@@ -283,7 +283,7 @@ class TodosTableSeeder extends Seeder
             'fname' => '目黒',
             'name' => '警部',
             'gender'=>'男性',
-            'email'=>'43542@mail.com',
+            'email'=>'432@mail.com',
             'postcode'=>'2423-564435',
             'address'=>'目黒区',
             'building_name'=>'警視庁',

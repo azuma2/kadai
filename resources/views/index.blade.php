@@ -65,7 +65,7 @@ form{
     transition: 0.4s;
     outline: none;
     margin-left: 250px;
-    margin-top: 5px;
+        margin-top: 5px;
 }
 </style>
 <h2 class=otoiawase>

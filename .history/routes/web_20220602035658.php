@@ -10,8 +10,9 @@ Route::get('/kanri', [TodoController::class, 'index4']);
 
 Route::post('/todo/create', [TodoController::class, 'create']);
 Route::post('/todo/delete', [TodoController::class, 'remove']);
-Route::get('/serch', [TodoController::class, 'serch']);
-Route::post('/kari', [TodoController::class, 'kari']);
+Route::get('/serch', [TodoController::class, 'serch'])
+    ->name('posts.index');
+
 
 use App\Http\Controllers\AuthorController;
 Route::get('/', [AuthorController::class, 'index']);

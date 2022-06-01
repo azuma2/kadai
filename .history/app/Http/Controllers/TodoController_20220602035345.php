@@ -62,6 +62,8 @@ class TodoController extends Controller
         return view('/kakunin', $data);
     }
 
+
+
 public function create()
 {
     $data = session()->all(); // ２）

@@ -2,7 +2,6 @@
 <style>
 .otoiawase{
   padding-left: 200px;
-
 }
 
 form{

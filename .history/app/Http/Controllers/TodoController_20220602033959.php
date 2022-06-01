@@ -62,7 +62,27 @@ class TodoController extends Controller
         return view('/kakunin', $data);
     }
 
-public function create()
+        public function create(Request $request)
+    {
+        $this->validate($request, Todo::$rules);
+        $form = $request->all();
+        Todo::create($form);
+        $param = [
+            'fname' => $request->fname,
+            'name' => $request->name,
+            'gender'=>$request->gender,
+            'email'=>$request->email,
+            'postcode'=>$request->postcode,
+            'address'=>$request->address,
+            'building_name'=>$request->building_name,
+            'opinion'=>$request->opinion,
+        ];
+        
+        return view('/san', $param);
+    }
+
+
+public function complete2()
 {
     $data = session()->all(); // ２）
     DB::table('todos')->insert([
