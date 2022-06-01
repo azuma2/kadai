@@ -181,9 +181,10 @@ height: 30px;
           </td>
         </tr>
       </table>
-      <input type="submit" class="button" value="検索">
-      <input type="reset" value="リセット" onclick="location.href='/kanri'">
-    </form>
+  <input type="submit" class="button" value="検索">
+  <input type="reset" value="リセット" onclick="location.href='/kanri'">
+</form>
+    
   </div>
 
 {{ $items->links() }}

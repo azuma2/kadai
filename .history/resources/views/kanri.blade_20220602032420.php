@@ -181,10 +181,18 @@ height: 30px;
           </td>
         </tr>
       </table>
-      <input type="submit" class="button" value="検索">
-      <input type="reset" value="リセット" onclick="location.href='/kanri'">
-    </form>
+  <input type="submit" class="button" value="検索">
+  <input type="reset" value="リセット" onclick="location.href='/kanri'">
+</form>
+    
   </div>
+
+<form action="/serch" method="GET">
+    <input type="date" name="from" placeholder="from_date">
+        <span class="mx-3 text-grey">~</span>
+    <input type="date" name="until" placeholder="until_date">
+    <button type="submit">検索</button>
+</form>
 
 {{ $items->links() }}
 
