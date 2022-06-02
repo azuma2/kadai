@@ -14,7 +14,7 @@ class TodoController extends Controller
     public function index(Request $request)
     {
         $items = Todo::all();
-         $items = DB::select('select * from todos');
+
         return view('/index');
     }
 
@@ -64,8 +64,8 @@ class TodoController extends Controller
 
 public function create()
 {
-    $data = session()->all(); // ２）
-    DB::table('todos')->insert([
+    $data = session()->all(); 
+    Todo::create([
             'fname' => $data["fname"],
             'name' => $data["name"],
             'gender'=>$data["gender"],
@@ -74,7 +74,7 @@ public function create()
             'address'=>$data["address"],
             'building_name'=>$data["building_name"],
             'opinion'=>$data["opinion"]
-    ]); // ３）
+    ]); 
     return view('san');
 }
 
